@@ -56,7 +56,9 @@ public class Deck {
 		if (numberOfJokers>0){
 		//now add the jokers
 			for (int i = 1; i<= numberOfJokers; i++){
-				MakingDeck.add(new Card(eSuit.SPADES, eRank.JOKER, 54));
+				Card newj = new Card(eSuit.SPADES, eRank.JOKER, 54);
+				newj.setWild();
+				MakingDeck.add(newj);
 			}
 		}
 		//Set the instance variable

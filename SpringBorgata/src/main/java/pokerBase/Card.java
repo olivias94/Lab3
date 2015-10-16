@@ -74,7 +74,29 @@ public final class Card {
 	{
 		return this.CardImg;
 	}
-
+	
+	public boolean sameSuit(Card card){
+		if (this.getSuit() == card.getSuit())
+			return true;
+		else if (this.getWild() || card.getWild())
+			return true;
+		else
+			return false;
+		
+					
+	}
+	
+	public boolean sameRank(Card card){
+		if (this.getRank() == card.getRank())
+			return true;
+		else if (this.getWild() || card.getWild())
+			return true;
+		else
+			return false;
+		
+					
+	}
+	
 	/**
 	 * CardRank Comparator is used for sorting the collection by rank
 	 */
