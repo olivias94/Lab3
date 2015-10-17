@@ -2,12 +2,6 @@ package pokerEnums;
 
 public enum eHandStrength {
 
-	FiveOfAKind(110){
-		public String toString()
-		{
-			return "Five of a Kind";
-		}
-	},
 	RoyalFlush(100){
 		public String toString()
 		{
@@ -24,6 +18,12 @@ public enum eHandStrength {
 		public String toString()
 		{
 			return "Straight Flush";
+		}
+	},
+	FiveOfAKind(85){
+		public String toString()
+		{
+			return "Five of a Kind";
 		}
 	},
 	FourOfAKind(80){
