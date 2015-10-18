@@ -34,6 +34,9 @@ public final class Card {
 		Suit = suit; 
 		Rank = rank; 
 		this.Wild = false;
+		if (Rank == eRank.JOKER){
+			this.Wild = true;
+		}
 		this.CardImg = CardNbr + ".png";
 		
 	}
@@ -41,6 +44,7 @@ public final class Card {
 	public Card(eSuit suit, eRank rank, boolean Wild) {
 		Suit = suit; 
 		Rank = rank; 
+		
 		this.Wild = Wild;
 	}
 	

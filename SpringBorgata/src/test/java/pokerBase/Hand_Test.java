@@ -983,6 +983,8 @@ public class Hand_Test {
 		h.AddCardToHand(new Card(eSuit.CLUBS,eRank.JOKER,0));
 		h.EvalHand();
 		
+		h.ShowHand();
+		System.out.println(h.getHandStrength());
 		assertFalse(h.getHandStrength() == eHandStrength.HighCard.getHandStrength());
 		
 	}		
